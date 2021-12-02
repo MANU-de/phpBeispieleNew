@@ -18,7 +18,7 @@ if ("POST" == $_SERVER["REQUEST_METHOD"]) {
     $DB_PASSWORT = ""; // Passwort
 
     /* Zeichenkodierung UTF-8 (utf8mb4) bei der Verbindung setzen,
-     Infos: https://werner-zenk.de/tipps/schriftzeichen_richtig_darstellen.php
+     
      Und eine PDOException bei einem Fehler auslösen. */
     $OPTION = [
         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4",
